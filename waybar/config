@@ -1,0 +1,45 @@
+{
+    "height": 22, // Waybar height (to be removed for auto height)
+    "spacing": 4, // Gaps between modules (4px)
+    "modules-left": [
+        "sway/workspaces"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "network",
+        "cpu",
+        "memory",
+        "clock",
+        "tray"
+    ],
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name}"
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%a %d-%m-%Y }"
+    },
+    "cpu": {
+        "format": "{usage}% \uf2db",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "<b>{used:0.1f}</b> / {total:0.1f} \uf0c9"
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{signalStrength}% ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "<span foreground=\"#cc241d\">⚠</span> ",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    }
+}
