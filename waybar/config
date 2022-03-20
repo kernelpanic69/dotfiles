@@ -4,12 +4,13 @@
     "modules-left": [
         "sway/workspaces"
     ],
-    "modules-center": [],
+    "modules-center": [
+        "clock"
+    ],
     "modules-right": [
         "network",
         "cpu",
         "memory",
-        "clock",
         "tray"
     ],
     "keyboard-state": {

@@ -14,7 +14,6 @@ function install_waybar {
 }
 
 function main {
-  echo $1
   case $1 in
     "all")
       install_zshrc
