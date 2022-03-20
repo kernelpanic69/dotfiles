@@ -13,3 +13,4 @@ bindsym $mod+d exec $menu
 
 bindsym $mod+t exec telegram-desktop
 bindsym $mod+w exec $browser
+bindsym $mod+y exec keepassxc
