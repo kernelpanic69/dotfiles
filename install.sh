@@ -5,7 +5,7 @@ CONFIG=$HOME/.config/
 
 function install_zshrc {
   cp $ROOT/.zshrc $HOME/
-  . $HOME/.zshrc
+  source $HOME/.zshrc
 }
 
 function install_sway {
