@@ -1,5 +1,5 @@
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/kernelpanic/.local/share/wallpapers/nord-wallpapers/operating-systems/archlinux.png fill 
 
 gaps inner 5
 default_border pixel 2

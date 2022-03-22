@@ -1,3 +1,4 @@
 #AUTOSTART
 exec --no-startup-id pipewire
 exec_always "killall waybar; waybar"
+exec --no-startup-id "bluetoothctl -- power on"
