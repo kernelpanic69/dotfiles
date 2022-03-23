@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FuraCode Nerd Font Mono, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 window#waybar {
@@ -73,6 +73,7 @@ window#waybar.chromium {
 #tray,
 #mode,
 #idle_inhibitor,
+#language,
 #mpd {
     padding: 0 10px;
 }
@@ -120,4 +121,9 @@ label:focus {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
+}
+
+#language {
+    font-weight: bold;
+    color: #fe8019;
 }

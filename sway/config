@@ -8,6 +8,10 @@ bindsym Print exec screenshot -s
 bindsym Mod1+Print exec screenshot -w
 bindsym Ctrl+Mod1+Print exec screenshot -r
 
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec playerctl play-pause
+
 # Example configuration:
 #
 #   input "2:14:SynPS/2_Synaptics_TouchPad" {
@@ -32,6 +36,7 @@ input * {
 # Volume control
 bindsym XF86AudioLowerVolume exec --no-startup-id vol -d
 bindsym XF86AudioRaiseVolume exec --no-startup-id vol -i
+bindsym XF86AudioMute exec --no-startup-id vol -m
 
     # Reload the configuration file
     bindsym $mod+Shift+r reload

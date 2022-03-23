@@ -1,6 +1,5 @@
 {
-    "height": 22, // Waybar height (to be removed for auto height)
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 4,
     "margin": "5 5 0 5",
     "modules-left": [
         "sway/workspaces"
@@ -12,8 +11,26 @@
         "network",
         "cpu",
         "memory",
+        "sway/language",
         "tray"
     ],
+    "sway/language": {
+        "format": "{} "
+    },
+    "sway/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "urgent": "",
+            "active": "",
+            "default": ""
+        }
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -25,7 +42,6 @@
     },
     "clock": {
         "format": "{:%H:%M}",
-        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%a %d-%m-%Y }"
     },
     "cpu": {
@@ -33,15 +49,14 @@
         "tooltip": false
     },
     "memory": {
-        "format": "<b>{used:0.3f}</b> / {total:0.3f} GB \uf0c9"
+        "format": "<b>{used:0.3f}</b> / {total:0.3f} GB \uf1c0"
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{signalStrength}% ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-ethernet": "{ipaddr}{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "<span foreground=\"#cc241d\">⚠</span> ",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {ipaddr}{cidr}"
     }
 }

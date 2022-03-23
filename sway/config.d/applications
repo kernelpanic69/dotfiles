@@ -1,5 +1,4 @@
 set $term alacritty
-set $menu bemenu-run | xargs swaymsg exec --
 set $browser librewolf
 
 # Start a terminal
@@ -15,3 +14,4 @@ bindsym $mod+t exec telegram-desktop
 bindsym $mod+w exec $browser
 bindsym $mod+y exec keepassxc
 bindsym $mod+u exec skypeforlinux
+bindsym $mod+e exec nemo
