@@ -19,15 +19,43 @@ function install_waybar {
 }
 
 function install_scripts() {
-  cp $ROOT/scripts/volume.sh $HOME/.local/bin/vol
+  cp $ROOT/scripts/* $HOME/.local/bin/
+}
+
+function check_command {
+  com="$1"
+
+  if command -v $1 &> /dev/null; then
+    declare "$com"_installed=1
+
+    echo "\e[32m[OK]\e[0m \'$com\' is installed"
+  else
+    echo "\e[31m[Warning]\e[0m: \'$com\' is not installed"
+  fi
+}
+
+function check_deps {
+  echo "Checking dependencies ..."
+
+  check_command sway
+  check_command waybar
+  check_command wofi
+  check_command slurp
+  check_command swappy
+  check_command grim
+  check_command pactl
+  check_command swayidle
+  check_command swaylock
 }
 
 function main {
   case $1 in
     "all")
+      check_deps
       install_zshrc
       install_sway
       install_waybar
+      install_scripts
     ;;
     "zsh")
       install_zshrc
@@ -39,11 +67,11 @@ function main {
       install_waybar
     ;;
     "scripts")
-	install_scripts
+	    install_scripts
     ;;
     *)
       echo "Usage: $0 <all|zsh|sway|waybar|scripts>"
-      exit 1
+      exit 2
   esac
 }
 
