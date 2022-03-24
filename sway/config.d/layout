@@ -1,11 +1,11 @@
 # You can "split" the current object of your focus with
 # $mod+b or $mod+v, for horizontal and vertical splits
 # respectively.
-bindsym $mod+b splith
-bindsym $mod+v splitv
+bindcode $mod+55 splith
+bindcode $mod+54 splitv
 
 # Make the current focus fullscreen
-bindsym $mod+f fullscreen
+bindcode $mod+41 fullscreen
 
 # Toggle the current focus between tiling and floating mode
 bindsym $mod+Shift+space floating toggle
@@ -14,4 +14,4 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # Move focus to the parent container
-bindsym $mod+a focus parent
+bindcode $mod+38 focus parent

@@ -2,7 +2,8 @@
     "spacing": 4,
     "margin": "5 5 0 5",
     "modules-left": [
-        "sway/workspaces"
+        "sway/workspaces",
+        "sway/mode"
     ],
     "modules-center": [
         "clock"
