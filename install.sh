@@ -23,7 +23,12 @@ function install_waybar {
 
 function install_scripts() {
   cp $ROOT/scripts/* $BIN/
-  echo "Installed control scripts to: $BIN"
+  echo "Installed control scripts to $BIN"
+}
+
+function install_wofi {
+  cp -r $ROOT/wofi $CONFIG/
+  echo "Installed wofi config to $CONFIG"
 }
 
 function check_command {
@@ -63,6 +68,7 @@ function main {
       install_sway
       install_waybar
       install_scripts
+      install_wofi
     ;;
     "check-deps")
       check_deps
@@ -78,6 +84,9 @@ function main {
     ;;
     "scripts")
 	    install_scripts
+    ;;
+    "wofi")
+      install_wofi
     ;;
     *)
       echo "Usage: $0 <all|zsh|sway|waybar|scripts|check-deps>"
