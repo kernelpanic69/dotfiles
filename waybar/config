@@ -39,7 +39,6 @@
         "format": "{name}"
     },
     "tray": {
-        // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
@@ -47,7 +46,7 @@
         "format-alt": "{:%a %d-%m-%Y }"
     },
     "cpu": {
-        "format": "{usage}% \uf2db",
+        "format": "{usage}% \uf0e4",
         "tooltip": false
     },
     "memory": {
