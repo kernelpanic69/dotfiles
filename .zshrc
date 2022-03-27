@@ -31,8 +31,8 @@ zle -N edit-command-line
 bindkey "^e" edit-command-line
 # end edit commnad lineL
 
-PROMPT='%B%F{magenta}%n%f@%F{cyan}%m:%b %U%F{yellow}%~%f%u >> '
-RPROMPT='%F{blue}%T %(?.%F{green}[%?].%F{red}[%?]%f)'
+PROMPT='%B%F{magenta}%n%f@%F{cyan}%m:%b %U%F{yellow}%~%f%u %(?.%F{green}[%?].%F{red}[%?]) >>%f '
+#RPROMPT='%F{blue}%T %(?.%F{green}[%?].%F{red}[%?]%f)'
 
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 
 
@@ -44,6 +44,10 @@ export XDG_CURRENT_DESKTOP="Unity slack"
 
 function bg {
   $@ &;disown;
+}
+
+function copy-path {
+  readlink -f "$1" | wl-copy
 }
 
 # tty colors

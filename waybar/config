@@ -21,6 +21,7 @@
     "sway/workspaces": {
         "format": "{name}",
         "on-click": "activate",
+	"active-only": false,
         "format-icons": {
             "1": "",
             "2": "",

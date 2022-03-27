@@ -5,9 +5,9 @@ function showVolume(){
   app_name="Volume"
 
   if [ $1 -eq 0 ]; then 
-    dunstify -a $app_name -u low -i audio-volume-muted -h string:x-dunst-stack-tag:$msg_tag "Volume muted"
+    notify-send -a $app_name -u low -i audio-volume-muted -h string:x-dunst-stack-tag:$msg_tag "Volume muted"
   else
-    dunstify -a $app_name -u low -i audio-volume-muted -h string:x-dunst-stack-tag:$msg_tag \
+    notify-send -a $app_name -u low -i audio-volume-muted -h string:x-dunst-stack-tag:$msg_tag \
       -h int:value:"$1" "Volume ${1}%" 
   fi
 }
