@@ -14,6 +14,7 @@ alias grep="grep --color=auto"
 alias zhconf="$EDITOR ~/.zshrc"
 alias i3conf="$EDITOR ~/.config/i3/config"
 alias x="sway"
+alias npq="notepadqq"
 # End aliases
 
 # Tab completion

@@ -1,5 +1,5 @@
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/.local/share/wallpapers/archlinux.png fill 
+#output * bg ~/.local/share/wallpapers/archlinux.png fill 
 
 gaps inner 5
 default_border pixel 2

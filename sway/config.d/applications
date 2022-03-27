@@ -8,7 +8,7 @@ bindsym $mod+Return exec $term
 bindcode $mod+24 kill
 
 # Start your launcher
-bindcode $mod+40 exec wofi --show drun --allow-images --no-actions
+bindcode $mod+40 exec wofi --allow-images --show drun --no-actions --exec-search
 
 bindcode $mod+28 exec telegram-desktop
 bindcode $mod+25 exec $browser
