@@ -89,7 +89,7 @@ function main {
       install_wofi
     ;;
     *)
-      echo "Usage: $0 <all|zsh|sway|waybar|scripts|check-deps>"
+      echo "Usage: $0 <all|zsh|sway|waybar|wofi|scripts|check-deps>"
       exit 2
   esac
 }
