@@ -14,4 +14,6 @@ bindcode $mod+28 exec telegram-desktop
 bindcode $mod+25 exec $browser
 bindcode $mod+29 exec keepassxc
 bindcode $mod+30 exec skypeforlinux
-bindcode $mod+26 exec nemo
+bindcode $mod+26 exec thunar
+bindcode $mod+27 exec alacritty 
+
